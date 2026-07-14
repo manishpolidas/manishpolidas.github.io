@@ -1,0 +1,52 @@
+{
+  "jobs": [
+    {
+      "outfile": "resume_deloitte_s4hana-abap-rap_2026-07-14.tex",
+      "summary": "SAP developer with $\\sim$5 years of experience designing, building, and supporting performant S/4HANA extensions using ABAP on HANA, the ABAP RESTful Application Programming model (RAP), CDS Views, and OData services that enable modern Fiori and integration scenarios. Delivered two greenfield S/4HANA implementations and a global rollout with full RICEFW scope across MM, QM, SD, and FI. Practices Clean Core extensibility (in-app and side-by-side on SAP BTP with CAP) and disciplined engineering: ATC compliance, ABAP Unit, gCTS/abapGit, CI/CD. SAP-certified Solution Architect (BTP), Back-End Developer (ABAP Cloud), and Fiori Application Developer.",
+      "sap_line": "RAP, CDS Views, OData, ABAP on HANA, ABAP Cloud, AMDP, Clean Core Extensibility (in-app \\& side-by-side), Fiori/SAPUI5, SAP BTP, CAP, Adobe Forms, BRF+, Workflow",
+      "accenture_bullet_order": [0, 2, 3, 1, 5, 4, 6]
+    },
+    {
+      "outfile": "resume_jpmc_se3-sap-abap_2026-07-14.tex",
+      "summary": "SAP developer with $\\sim$5 years of hands-on ABAP-on-HANA experience: CDS Views, AMDP database procedures, ADT (Eclipse), Native SQL, and performance-optimized ALV reporting on S/4HANA. Builds RESTful OData services and Fiori/SAPUI5 applications, with functional exposure to FI alongside MM, QM, and SD, and full RICEFW delivery across two greenfield S/4HANA implementations and a global rollout. Strong engineering discipline: ABAP Unit testing, ATC compliance, and Git-based versioning with abapGit/gCTS in CI/CD pipelines. SAP-certified Solution Architect (BTP), Back-End Developer (ABAP Cloud), and Fiori Application Developer.",
+      "sap_line": "ABAP on HANA, CDS Views, AMDP, OData, RAP, Fiori/SAPUI5, ABAP Cloud, SAP BTP, CAP, Clean Core Extensibility, Workflow, BRF+, Adobe Forms",
+      "accenture_bullet_order": [0, 2, 3, 6, 5, 1, 4]
+    },
+    {
+      "outfile": "resume_wipro_abap-hana-fullstack_2026-07-14.tex",
+      "summary": "Full-stack SAP S/4HANA developer with $\\sim$5 years of experience spanning object-oriented ABAP, RAP, CDS Views, OData services, and Fiori/SAPUI5 front ends. Delivered two greenfield S/4HANA implementations and a global retail rollout with full RICEFW scope across MM, QM, SD, and FI, including analysis and refactoring of large custom codebases. Follows Clean Core extensibility on SAP BTP and rigorous engineering practice: ATC, ABAP Unit, gCTS/abapGit, CI/CD. SAP-certified Solution Architect (BTP), Back-End Developer (ABAP Cloud), and Fiori Application Developer.",
+      "sap_line": "ABAP on HANA (OO ABAP), RAP, CDS Views, OData, Fiori/SAPUI5, ABAP Cloud, AMDP, SAP BTP, CAP, Clean Core Extensibility, Adobe Forms, BRF+, Workflow",
+      "accenture_bullet_order": [0, 3, 2, 1, 5, 4, 6]
+    },
+    {
+      "outfile": "resume_bdi-india_abap-rap-remote_2026-07-14.tex",
+      "summary": "SAP ABAP developer with $\\sim$5 years of experience in object-oriented ABAP on S/4HANA, building RAP-based applications, CDS Views, and OData/Gateway services (SEGW and CDS-based). Delivered two greenfield S/4HANA implementations and a global rollout with full RICEFW scope across MM, QM, SD, and FI. Comfortable in distributed teams with Git-based workflows (abapGit/gCTS), ATC-compliant code, and ABAP Unit testing in CI/CD pipelines. SAP-certified Back-End Developer (ABAP Cloud), Solution Architect (BTP), and Fiori Application Developer.",
+      "sap_line": "OO ABAP on HANA, RAP, CDS Views, OData (SEGW \\& CDS-based), Fiori/SAPUI5, ABAP Cloud, AMDP, SAP BTP, CAP, Clean Core Extensibility, Adobe Forms, BRF+, Workflow",
+      "accenture_bullet_order": [0, 3, 2, 1, 5, 4, 6]
+    },
+    {
+      "outfile": "resume_siemens_senior-cap-developer_2026-07-14.tex",
+      "summary": "SAP BTP developer with $\\sim$5 years of SAP experience, including architecting cloud-native side-by-side extensions with the Cloud Application Programming model (CAP) and Node.js on SAP BTP, consuming S/4HANA services via OData. Deep CDS expertise on both stacks (ABAP CDS and HANA-side modeling with AMDP), plus RAP and ABAP Cloud for clean-core backends. Runs Git-based CI/CD pipelines (abapGit/gCTS) with ATC and ABAP Unit quality gates. SAP-certified Solution Architect (BTP) -- covering BTP services, security, and connectivity -- plus Back-End Developer (ABAP Cloud) and Fiori Application Developer certifications.",
+      "sap_line": "SAP BTP, CAP, CDS Views (ABAP \\& HANA), RAP, ABAP Cloud, OData, Clean Core Extensibility (side-by-side \\& in-app), Fiori/SAPUI5, ABAP on HANA, AMDP, Workflow, BRF+, Adobe Forms",
+      "accenture_bullet_order": [1, 2, 3, 0, 5, 4, 6]
+    },
+    {
+      "outfile": "resume_sap-labs_dev-consultant-btp_2026-07-14.tex",
+      "summary": "SAP developer with $\\sim$5 years of experience building extensions and applications on SAP BTP: CAP services with Node.js, Fiori/SAPUI5 front ends (built on SAP Business Application Studio), OData/Gateway services, and SAP Workflow with BRF+ decision logic. Delivered two greenfield S/4HANA implementations and a global rollout, pioneering SAP generative-AI capabilities for intelligent document processing in procurement. Clean Core practitioner with ATC, ABAP Unit, and gCTS/abapGit CI/CD discipline. SAP-certified Solution Architect (BTP), Generative AI Developer, Back-End Developer (ABAP Cloud), and Fiori Application Developer.",
+      "sap_line": "SAP BTP, CAP, Fiori/SAPUI5, OData/Gateway, CDS Views, Workflow, BRF+, RAP, ABAP Cloud, ABAP on HANA, AMDP, Clean Core Extensibility, Adobe Forms",
+      "accenture_bullet_order": [1, 3, 4, 0, 2, 5, 6]
+    },
+    {
+      "outfile": "resume_schaeffler_abap-fiori-fullstack_2026-07-14.tex",
+      "summary": "Full-stack SAP developer with $\\sim$5 years of experience combining ABAP backend development with Fiori/SAPUI5 front ends on S/4HANA, in manufacturing and retail landscapes (MM, QM, SD, FI). Experienced across the full delivery cycle: clarifying and reviewing technical specifications, designing interfaces between business applications (OData, IDocs, RFCs, Proxies), coding to ATC standards, and testing with ABAP Unit. Delivered two greenfield S/4HANA implementations and a global rollout, plus BTP side-by-side extensions following Clean Core guidelines. SAP-certified Solution Architect (BTP), Back-End Developer (ABAP Cloud), and Fiori Application Developer.",
+      "sap_line": "ABAP on HANA, Fiori/SAPUI5, OData, CDS Views, RAP, ABAP Cloud, AMDP, SAP BTP, CAP, Clean Core Extensibility, Adobe Forms, BRF+, Workflow",
+      "accenture_bullet_order": [0, 3, 5, 2, 1, 4, 6]
+    },
+    {
+      "outfile": "resume_bosch_s4hana-abap-hyd_2026-07-14.tex",
+      "summary": "SAP S/4HANA ABAP developer based in Hyderabad with $\\sim$5 years of experience across two greenfield implementations and a major global rollout. Full RICEFW delivery on MM, QM, SD, and FI: performance-optimized ABAP on HANA, CDS Views, AMDP, OData services, enhancements (BADIs, user exits), IDoc/Proxy interfaces, and Adobe/Smart Forms. Modern-stack ready with RAP, ABAP Cloud, and Clean Core extensibility on SAP BTP, backed by ATC, ABAP Unit, and gCTS/abapGit CI/CD practice. SAP-certified Solution Architect (BTP), Back-End Developer (ABAP Cloud), and Fiori Application Developer.",
+      "sap_line": "ABAP on HANA, CDS Views, AMDP, OData, RAP, ABAP Cloud, Clean Core Extensibility, Fiori/SAPUI5, SAP BTP, CAP, Adobe Forms, BRF+, Workflow",
+      "accenture_bullet_order": [0, 5, 2, 3, 4, 1, 6]
+    }
+  ]
+}

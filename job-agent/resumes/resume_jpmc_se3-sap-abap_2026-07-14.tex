@@ -1,0 +1,150 @@
+%-------------------------
+% Resume — Manish Polidas
+% Canonical master (job-agent). Reconstructed 2026-07-14 from master profile;
+% per-job tailored copies live in job-agent/resumes/ — edit those, never this file.
+%-------------------------
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generated pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Manish Polidas} \\ \vspace{1pt}
+    \small +91 8179672801 $|$ \href{mailto:manishpolidas@gmail.com}{manishpolidas@gmail.com} $|$
+    \href{https://www.linkedin.com/in/manish-p-01765a139/}{linkedin.com/in/manish-p-01765a139} $|$
+    \href{https://manishpolidas.github.io}{manishpolidas.github.io} $|$ Hyderabad, India
+\end{center}
+
+%-----------PROFESSIONAL SUMMARY-----------
+\section{Professional Summary}
+SAP developer with $\sim$5 years of hands-on ABAP-on-HANA experience: CDS Views, AMDP database procedures, ADT (Eclipse), Native SQL, and performance-optimized ALV reporting on S/4HANA. Builds RESTful OData services and Fiori/SAPUI5 applications, with functional exposure to FI alongside MM, QM, and SD, and full RICEFW delivery across two greenfield S/4HANA implementations and a global rollout. Strong engineering discipline: ABAP Unit testing, ATC compliance, and Git-based versioning with abapGit/gCTS in CI/CD pipelines. SAP-certified Solution Architect (BTP), Back-End Developer (ABAP Cloud), and Fiori Application Developer.
+
+%-----------SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{SAP Technologies:} ABAP on HANA, RAP, ABAP Cloud, CDS Views, AMDP, OData, Clean Core Extensibility (in-app \& side-by-side), SAP BTP, CAP, Fiori/SAPUI5, Adobe Forms, BRF+, Workflow \\
+     \textbf{Languages:} ABAP, Python, JavaScript, Java, Node.js, SQL \\
+     \textbf{Integration:} OData services, REST/SOAP APIs, IDocs, RFCs, Proxies, BAPIs \\
+     \textbf{Tools:} Eclipse ADT, SAP BAS, ATC, ABAP Unit, Code Inspector, gCTS, abapGit, CI/CD pipelines, SEGW \\
+     \textbf{Methodologies:} Agile/Scrum, RICEFW development, greenfield implementations, global rollouts \\
+    }}
+ \end{itemize}
+
+%-----------EXPERIENCE-----------
+\section{Work Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Airbus}{Sep 2025 -- Present}
+      {Technology Analyst}{India}
+      \resumeItemListStart
+        \resumeItem{Develop S/4HANA extensions using ABAP RAP, CDS Views, and OData following Clean Core extensibility guidelines (in-app and side-by-side on SAP BTP).}
+        \resumeItem{Build and maintain Fiori/SAPUI5 applications and backend services across MM and QM processes.}
+        \resumeItem{Apply modern engineering practice: ATC-compliant code, ABAP Unit tests, and version control with gCTS/abapGit in CI/CD pipelines.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Accenture}{Jan 2022 -- Aug 2025}
+      {Packaged App Development Analyst}{Hyderabad, India}
+      \resumeItemListStart
+        \resumeItem{Led technical design and development on 2 greenfield S/4HANA implementations and a major global retail rollout impacting 500+ stores across multiple countries.}
+        \resumeItem{Created 15+ complex CDS Views and AMDP procedures for real-time inventory and sales analytics processing 2M+ transactions daily, achieving 70\% faster query execution through HANA optimization.}
+        \resumeItem{Implemented OData services (SEGW and CDS-based) enabling integration with third-party logistics providers; built 5 Fiori/SAPUI5 applications used by 200+ warehouse operators.}
+        \resumeItem{Introduced ABAP Unit testing to the team (80\% coverage on critical modules) and mentored 3 junior developers on ABAP best practices and S/4HANA guidelines.}
+        \resumeItem{Delivered RICEFW objects across MM, QM, SD, and FI: reports with ALV, BADIs, user exits, enhancement points, IDoc/Proxy B2B integration scenarios, and Adobe/Smart Forms.}
+        \resumeItem{Architected cloud-native side-by-side extensions on SAP BTP using CAP and Node.js, reducing system integration time by 40\%.}
+        \resumeItem{Configured SAP Workflow with BRF+ rules for automated approvals, cutting processing time from days to hours; developed custom ABAP data-migration framework reducing manual effort by 60\%.}
+
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------CERTIFICATIONS-----------
+\section{Certifications}
+  \begin{itemize}[leftmargin=0.15in, label={}, itemsep=-2pt]
+    \small{
+    \item \href{https://www.credly.com/badges/dc32452a-d304-42e3-a4d8-5aac36b12f97/public_url}{SAP Certified Professional -- Solution Architect, SAP BTP} \hfill \textnormal{May 2025}
+    \item \href{https://www.credly.com/badges/3891602f-46f2-4cbd-a788-efba58059ccd/public_url}{SAP Certified Associate -- SAP Generative AI Developer} \hfill \textnormal{2025}
+    \item \href{https://www.credly.com/badges/2f5395d5-6f9c-4238-90af-5effa19d0c1a/public_url}{SAP Certified Associate -- Back-End Developer, ABAP Cloud} \hfill \textnormal{Jul 2024}
+    \item \href{https://www.credly.com/badges/5b057778-45fe-42f3-8aca-2a8c48f2b67b/public_url}{SAP Certified Associate -- Fiori Application Developer} \hfill \textnormal{Jul 2024}
+    }
+  \end{itemize}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Sri Indu College of Engineering \& Technology}{2017 -- 2021}
+      {B.Tech, Computer Science \& Engineering}{Hyderabad, India}
+  \resumeSubHeadingListEnd
+
+\end{document}

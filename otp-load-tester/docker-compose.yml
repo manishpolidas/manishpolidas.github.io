@@ -1,0 +1,64 @@
+name: otp-load-tester
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: otp
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-otp}
+      POSTGRES_DB: otp_testing
+    volumes:
+      - otp-pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ['CMD-SHELL', 'pg_isready -U otp -d otp_testing']
+      interval: 5s
+      timeout: 3s
+      retries: 10
+    # Not published: only the API needs to reach the database.
+
+  api:
+    build:
+      context: .
+      dockerfile: server/Dockerfile
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      NODE_ENV: production
+      PORT: '4000'
+      CORS_ORIGINS: http://localhost:8080
+      SESSION_SECRET: ${SESSION_SECRET:?set SESSION_SECRET in .env}
+      OTP_HASH_PEPPER: ${OTP_HASH_PEPPER:?set OTP_HASH_PEPPER in .env}
+      DASHBOARD_USERNAME: ${DASHBOARD_USERNAME:-admin}
+      # Generate with: npm run hash-password -- '<password>'
+      DASHBOARD_PASSWORD_HASH: ${DASHBOARD_PASSWORD_HASH:?set DASHBOARD_PASSWORD_HASH in .env}
+      # LOCAL MOCK MODE is the default and needs no credentials.
+      SMS_MODE: ${SMS_MODE:-mock}
+      MOCK_LATENCY_MS: ${MOCK_LATENCY_MS:-120}
+      MOCK_FAILURE_RATE: ${MOCK_FAILURE_RATE:-0.05}
+      RECIPIENT_ALLOWLIST: ${RECIPIENT_ALLOWLIST:-}
+      SANDBOX_API_URL: ${SANDBOX_API_URL:-}
+      SANDBOX_API_KEY: ${SANDBOX_API_KEY:-}
+      MAX_MESSAGES_PER_MINUTE: ${MAX_MESSAGES_PER_MINUTE:-60}
+      MAX_MESSAGES_PER_TEST: ${MAX_MESSAGES_PER_TEST:-500}
+      MAX_DURATION_SECONDS: ${MAX_DURATION_SECONDS:-900}
+      MAX_CONCURRENT_TESTS: ${MAX_CONCURRENT_TESTS:-3}
+      PERSISTENCE: postgres
+      DATABASE_URL: postgres://otp:${POSTGRES_PASSWORD:-otp}@postgres:5432/otp_testing
+    # Exposed to the web container only; publish it if you want direct API access.
+    expose:
+      - '4000'
+    restart: unless-stopped
+
+  web:
+    build:
+      context: .
+      dockerfile: web/Dockerfile
+    depends_on:
+      - api
+    ports:
+      - '8080:8080'
+    restart: unless-stopped
+
+volumes:
+  otp-pgdata:
